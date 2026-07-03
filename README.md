@@ -5,6 +5,10 @@
 行走位置、鼠标、麦克风、键盘实时改变声音（音频层接入中，见 Roadmap）。
 
 **🎧 在线演示：** <https://wangzetian-iverson.github.io/sonic-walk/> ·（建议戴耳机，允许麦克风可选）
+<img width="1219" height="640" alt="image" src="https://github.com/user-attachments/assets/2383da48-81df-44e0-bcac-4e5fd53a5626" />
+
+
+
 
 ## 运行
 
