@@ -68,6 +68,7 @@ Documentation/      presentation_notes.md（演讲重点：recording/synthesis/p
 lib/                three.js + p5.js + p5.sound（本地化，离线可运行）
 assets/sounds/      16 个默认采样（城市/风/鸟/水/呼吸/脚步×8/拉链/钥匙/提示音）
 ```
+<img width="1086" height="1448" alt="image" src="https://github.com/user-attachments/assets/31f27c22-bccb-4815-aa59-cb8e5cf3a3ec" />
 
 ## 音频架构
 
