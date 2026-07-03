@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonic Walk — An Interactive Sound Journey</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./lib/three.module.js",
+        "three/addons/": "./lib/addons/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="scene"></canvas>
+
+  <!-- ======== START OVERLAY ======== -->
+  <div id="overlay">
+    <div class="overlay-inner">
+      <p class="kicker">AN INTERACTIVE SOUND JOURNEY</p>
+      <h1 class="title">SONIC&nbsp;WALK</h1>
+      <p class="jp-sub">音 の 散 歩</p>
+      <div class="instructions">
+        <div class="ins"><span class="key">W / ↑</span><span>walk forward</span></div>
+        <div class="ins"><span class="key">MOUSE</span><span>look &amp; shape the sound</span></div>
+        <div class="ins"><span class="key">MIC</span><span>breathe — the city hears you</span></div>
+        <div class="ins"><span class="key">1 – 8</span><span>toggle layers · one-shots</span></div>
+        <div class="ins"><span class="key">SPACE</span><span>final bloom (at the shrine)</span></div>
+        <div class="ins"><span class="key">P</span><span>auto-walk (presentation)</span></div>
+      </div>
+      <button id="start-btn">▶&nbsp; BEGIN THE WALK</button>
+      <p class="hint">headphones recommended · microphone optional</p>
+
+      <div id="sound-section">
+        <button id="sound-btn" title="sound sources">SOUND SOURCES&nbsp;<span class="jp-small">音源</span>&nbsp;◈</button>
+        <div id="sound-panel" class="hidden">
+          <p class="sp-hint">默认为程序生成的采样 (procedural placeholders)。<br>
+            上传你自己的录音 — 脚步、拉链、呼吸、街道 — 即时替换对应声音层。<br>
+            <span class="sp-note">在开始前上传，行走开始时即生效。</span></p>
+          <div id="sound-slots"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== HUD ======== -->
+  <div id="hud" class="hidden">
+    <div id="zone-toast"></div>
+    <div id="journey">
+      <div class="labels">
+        <span>CITY</span><span>BODY</span><span>NATURE</span>
+      </div>
+      <div class="track"><div id="journey-marker"></div></div>
+    </div>
+    <div id="corner-title">SONIC WALK <span class="jp">音の散歩</span></div>
+    <div id="mic-meter"><div id="mic-level"></div></div>
+  </div>
+
+  <script src="lib/p5.min.js"></script>
+  <script src="lib/p5.sound.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
