@@ -6,6 +6,9 @@
 
 **🎧 在线演示：** <https://wangzetian-iverson.github.io/sonic-walk/> ·（建议戴耳机，允许麦克风可选）
 <img width="1219" height="640" alt="image" src="https://github.com/user-attachments/assets/2383da48-81df-44e0-bcac-4e5fd53a5626" />
+<img width="1253" height="672" alt="image" src="https://github.com/user-attachments/assets/14b3a5e1-9073-4349-ad3f-63bedb11a592" />
+<img width="1269" height="661" alt="image" src="https://github.com/user-attachments/assets/388c5430-937d-4336-a9c0-df8084950977" />
+<img width="1270" height="651" alt="image" src="https://github.com/user-attachments/assets/fd2ddb5e-29e8-4ea2-aad9-4bb8a06f231f" />
 
 
 
