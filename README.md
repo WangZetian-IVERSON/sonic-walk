@@ -4,6 +4,8 @@
 一个网页里的交互声音作品：玩家在一条日系黄昏街道上行走，从「城市噪音」走向「自然与神社」，
 行走位置、鼠标、麦克风、键盘实时改变声音（音频层接入中，见 Roadmap）。
 
+**🎧 在线演示：** <https://wangzetian-iverson.github.io/sonic-walk/> ·（建议戴耳机，允许麦克风可选）
+
 ## 运行
 
 ```bash
@@ -70,8 +72,30 @@ assets/sounds/      16 个默认采样（城市/风/鸟/水/呼吸/脚步×8/拉
   脚步→随机 pingPong Delay + 变速 + 左右交替声像
 - **主参数**：行走进度 p 同时驱动视觉（天空/雾/光）和听觉（crossfade/混响/合成器音量）
 
+## 录屏 Demo
+
+现场演示可能遇到麦克风授权、浏览器自动播放策略或文件路径问题，**务必准备一段录屏保底**。
+
+**录制步骤：**
+
+1. 本地起服务：`npx http-server -p 5341 -c-1`，打开 <http://localhost:5341>（Chrome/Edge 全屏）。
+2. 用系统录屏（Windows `Win+G` Xbox Game Bar / macOS `Cmd+Shift+5`）**同时录制画面 + 系统声音**；
+   若要展示麦克风交互，另外开启麦克风轨道。
+3. 按 90 秒时间线走完整段旅程，建议演示脚本：
+   - `0:00–0:20` 起始页讲概念，可在 **SOUND SOURCES** 面板上传一段真实录音，点 **BEGIN THE WALK**。
+   - `0:20–0:45` 用 `W/↑` 前进，移动鼠标（X=视角/声像，Y=滤波亮度），对麦克风轻声呼吸驱动心跳。
+   - `0:45–1:10` 穿过鸟居进入森林，城市声被滤掉、风/鸟/水渐入；快速甩鼠标触发 glitch。
+   - `1:10–1:30` 走到神社前按 `Space` 触发 final bloom（gong + 暖 pad + 风铃琶音 + “Have you walked today?”）。
+   - 需要稳定节奏时按 `P` 自动行走。
+4. 导出 `mp4`（1080p 即可），放到 `Video/SonicWalk_recorded_demo.mp4`。
+
+> 提示：把录屏链接（YouTube / B 站 / 网盘）填到下面，方便评审直接观看。
+>
+> **Demo video:** _（待补充链接）_
+
 ## Roadmap
 
-- [ ] 用手机实录脚步/拉链/呼吸/街道，SOUNDS 面板替换（课程 recording 加分项）
-- [ ] 录屏 demo video 保底
+- [ ] 用手机实录脚步/拉链/呼吸/街道，SOUND SOURCES 面板替换（课程 recording 加分项）
+- [x] 在线演示：GitHub Pages
+- [ ] 录屏 demo video 保底（见上「录屏 Demo」）
 - [ ] （可选）打包 zip：Code + Assets + Documentation + Video
