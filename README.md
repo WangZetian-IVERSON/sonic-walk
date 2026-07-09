@@ -1,5 +1,6 @@
 # Sonic Walk — 音の散歩
 **An Interactive Sound Journey** · interactive media sound design project
+The wav assets are in the SOUND_assests.zip
 
 一个网页里的交互声音作品：玩家在一条日系黄昏街道上行走，从「城市噪音」走向「自然与神社」，
 行走位置、鼠标、麦克风、键盘实时改变声音（音频层接入中，见 Roadmap）。
